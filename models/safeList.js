@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 const SafeListSchema = new mongoose.Schema({
     safename:{
         type:String,
-        required:true
+        required:true,
+        unique:true
     },
     owner:{
         type:String,
