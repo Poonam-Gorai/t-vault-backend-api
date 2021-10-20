@@ -20,7 +20,7 @@ router.post("/", async (req, res) => {
     owner: req.body.owner,
     type: req.body.type,
     description: req.body.description,
-    secrets: [],
+    secrets: null,
   });
   try {
     const saveSafeList = await safeList.save();
